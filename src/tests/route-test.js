@@ -1,18 +1,19 @@
-const test = require("tape");
-const request = require("supertest");
-const app = require("../app");
+const test = require('tape');
+const request = require('supertest');
+const app = require('../app');
 
-test("Test tape is running", t => {
-  t.equal(1, 1, "Tape is working");
+test('Test tape is running', (t) => {
+  t.equal(1, 1, 'Tape is working');
   t.end();
 });
 
-test("Home route access", t => {
+test('Home route access', (t) => {
   request(app)
-    .get("/")
+    .get('/')
     .expect(200)
     .end((err, res) => {
       t.error(err);
+      t.equal(res.statusCode, 200, 'Should return 200');
       t.end();
     });
 });

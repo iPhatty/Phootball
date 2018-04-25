@@ -1,5 +1,5 @@
-const test = require('tape');
-const request = require('supertest');
+const test = require('tape'); // eslint-disable-line
+const request = require('supertest'); // eslint-disable-line
 const app = require('../app');
 
 test('Test tape is running', (t) => {
@@ -12,7 +12,7 @@ test('Home route access', (t) => {
     .get('/')
     .expect(200)
     .end((err, res) => {
-      t.error(err);
+      t.error(err, 'No errors');
       t.equal(res.statusCode, 200, 'Should return 200');
       t.end();
     });

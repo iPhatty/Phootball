@@ -5,7 +5,7 @@ const exphbs = require('express-handlebars');
 const app = express();
 
 // require controllers
-const controllers = require('./controllers/index');
+const controllers = require('./controllers/index.js');
 
 // Set up view engine
 app.set('views', path.join(__dirname, 'views'));

@@ -1,7 +1,38 @@
 <header class="header">
-    <h1>Hello World</h1>
+    <div class="standingsContainer">
+        <table class="table__standings">
+            <tr>
+                <th>Pos.</th>
+                <th> </th>
+                <th>Team Name</th>
+                <th>Pl</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>GF</th>
+                <th>GA</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            {{#each league.standing}}
+            <tr>
+                <td class="center">{{this.position}}</td>
+                <td class="center"><img src="{{this.crestURI}}" class="teamCrest"></td>
+                <td>{{this.teamName}}</td>
+                <td class="center">{{this.playedGames}}</td>
+                <td class="center">{{this.wins}}</td>
+                <td class="center">{{this.draws}}</td>
+                <td class="center">{{this.losses}}</td>
+                <td class="center">{{this.goals}}</td>
+                <td class="center">{{this.goalsAgainst}}</td>
+                <td class="center">{{this.goalDifference}}</td>
+                <td class="center">{{this.points}}</td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
 </header>
 
 <section>
-
+    
 </section>

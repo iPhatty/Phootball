@@ -39,6 +39,15 @@ body {
 .navbar__item a:visited {
   text-decoration: none;
   color: #2f3640;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.navbar__item a:hover,
+.navbar__item a:active {
+  text-decoration: none;
+  color: #ff4757;
+  background-color: #2f3640;
+
 }
 
 /* **************************** */

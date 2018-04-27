@@ -10,6 +10,14 @@ body {
 }
 
 /* **************************** */
+/* Reusable */
+/* **************************** */
+
+.center {
+    text-align: center;
+}
+
+/* **************************** */
 /* NavBar */
 /* **************************** */
 
@@ -58,8 +66,27 @@ body {
   height: 100vh;
   padding-top: 3rem;
   background-color: #57606f;
+  display: flex;
+  justify-content: center;
 }
 
 .header h1 {
   margin: 0;
+}
+
+/* **************************** */
+/* Table */
+/* **************************** */
+
+.standingsContainer {
+    padding-top: 3rem;
+}
+
+.table__standings{
+    font-size: 0.7rem;
+}
+
+.teamCrest {
+    height: 1rem;
+    width: auto;
 }

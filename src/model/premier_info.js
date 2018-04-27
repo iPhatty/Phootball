@@ -15,6 +15,7 @@ function getPremier(url, callback) {
       callback(err);
     } else {
       const results = JSON.parse(body);
+      console.log(results);
       callback(null, results);
     }
   });

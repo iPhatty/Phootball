@@ -11,9 +11,12 @@ function getPremier(url, callback) {
   };
 
   request(options, (err, res, body) => {
-    console.log('err: ', err);
-    console.log('res: ', res);
-    console.log('body ', body);
+    if (err) {
+      callback(err);
+    } else {
+      const results = JSON.parse(body);
+      callback(null, results);
+    }
   });
 }
 

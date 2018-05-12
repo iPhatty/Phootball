@@ -7,3 +7,9 @@ Using:
 - Express
 - Express-Handlebars
 - Request
+
+## Dependencies
+
+To install the node packages necessary to run, type `npm install` or `npm i` in your terminal.
+
+You can run the app locally by typing `npm start` in your terminal

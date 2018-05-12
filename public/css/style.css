@@ -46,7 +46,7 @@ body {
 .navbar__item a:link,
 .navbar__item a:visited {
   text-decoration: none;
-  color: #2f3640;
+  color: rgba(255, 255, 255,0.95);
   transition: color 0.5s, background-color 0.5s;
 }
 
@@ -55,7 +55,6 @@ body {
   text-decoration: none;
   color: #ff4757;
   background-color: #2f3640;
-
 }
 
 /* **************************** */
@@ -89,4 +88,21 @@ body {
 .teamCrest {
     height: 1rem;
     width: auto;
+}
+
+/* **************************** */
+/* Footer */
+/* **************************** */
+
+footer {
+  height: 5vh;
+  background-color: #ff4757;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+footer p {
+  margin: 0;
 }

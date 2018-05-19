@@ -8,7 +8,8 @@ exports.get = (req, res, next) => {
 
     // Append team API id
     league.standing.forEach((element) => {
-      element.id = element._links.team.href.split('/')[5];
+      const { team } = element._links;
+      element.id = team.href.split('/')[5];
     });
     return res.render('home', { league });
   });

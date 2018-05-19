@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "test": "nyc tape src/tests/*.test.js | tap-spec",
-    "start": "nodemon src/app.js"
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",

@@ -62,11 +62,11 @@ body {
 /* **************************** */
 
 .header {
-  height: 100vh;
-  padding-top: 3rem;
+  height: 95vh;
   background-color: #57606f;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .header h1 {

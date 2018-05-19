@@ -90,6 +90,16 @@ body {
     width: auto;
 }
 
+.team-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.team-link:hover,
+.team-link:active {
+  color: #ff4757;
+}
+
 /* **************************** */
 /* Footer */
 /* **************************** */

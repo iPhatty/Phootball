@@ -10,7 +10,6 @@ exports.get = (req, res, next) => {
     league.standing.forEach((element) => {
       element.id = element._links.team.href.split('/')[5];
     });
-    console.log(league);
     return res.render('home', { league });
   });
 };

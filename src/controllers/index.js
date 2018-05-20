@@ -5,11 +5,10 @@ const router = express.Router();
 
 // Controllers
 const home = require('./home');
+const team = require('./team');
 
 // Routes
 router.get('/', home.get);
-router.get('/:team', (req, res, next) => {
-  res.send('hello');
-});
+router.get('/:id', team.get);
 
 module.exports = router;

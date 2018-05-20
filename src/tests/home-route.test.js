@@ -9,7 +9,7 @@ test('Test tape is running', (t) => {
 
 test('Home route access', (t) => {
   request(app)
-    .get('/liverpool')
+    .get('/')
     .expect(200)
     .end((err, res) => {
       t.error(err, 'No errors');

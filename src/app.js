@@ -30,8 +30,5 @@ app.get('/', (req, res) => {
 });
 // Set Port
 app.set('port', process.env.PORT || 3000);
-// Listen
-app.listen(app.get('port'), () => {
-  console.log('Server running on', app.get('port'));
-});
+
 module.exports = app;

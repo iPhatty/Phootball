@@ -5,6 +5,12 @@ exports.get = (req, res, next) => {
     if (err) {
       next(err);
     }
+
+    // Append team API id
+    league.standing.forEach((element) => {
+      const { team } = element._links;
+      element.id = team.href.split('/')[5];
+    });
     return res.render('home', { league });
   });
 };

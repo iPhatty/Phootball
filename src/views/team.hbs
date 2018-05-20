@@ -1,0 +1,17 @@
+<header class="header-team">
+    <div class="row">
+        <div class="column-team column">
+            <img src="{{team.crestUrl}}" />
+            <h2 class="team-name">{{team.name}}</h2>
+        </div>
+        <div class="column-past column">
+            <h2>Past Fixtures (7 Days)</h2>
+            <ul>
+                {{#each pastFixtures.fixtures}}
+                <li>{{this.homeTeamName}} {{this.result.goalsHomeTeam}} vs {{awayTeamName}} {{this.result.goalsAwayTeam}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+</header>

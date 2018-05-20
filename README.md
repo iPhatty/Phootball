@@ -8,6 +8,11 @@ Using:
 - Express-Handlebars
 - Request
 
+For Testing:
+- Tape
+- Supertest
+- NYC
+
 ## Dependencies
 
 To install the node packages necessary to run, type `npm install` or `npm i` in your terminal.

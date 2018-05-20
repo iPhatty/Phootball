@@ -1,4 +1,4 @@
-# Premier-League <a href="https://phootball.herokuapp.com/" target="_blank">Link</a>
+# Premier-League [Link](https://phootball.herokuapp.com/) 
 Personal practice project using the [Football-Data Api](https://www.football-data.org/).
 
 Users will be able to keep up to date with the current Premier League season.

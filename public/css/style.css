@@ -96,8 +96,9 @@ body {
 
 .row {
   display:flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 /* **************************** */
@@ -105,11 +106,20 @@ body {
 /* **************************** */
 
 .column {
-  margin-right: 2rem;
+  width: 40%;
 }
 
 .column-team {
   text-align: center;
+}
+
+.column ul {
+  padding: 0;
+  margin: 0;
+}
+
+.column-past ul li {
+  list-style: none;
 }
 
 /* **************************** */
@@ -155,4 +165,23 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+@media only screen and (max-width: 640px) {
+
+  .column {
+    width: 100%;
+  }
+
+  .column-past {
+    text-align: center;
+  }
+
+  .row {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 }

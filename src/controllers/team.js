@@ -15,12 +15,9 @@ exports.get = (req, res, next) => {
           next(err2);
         }
 
-        //   console.log(nextFixtures.fixtures[0].status);
-
         const notFinished = nextFixtures.fixtures.filter(object => object.status === 'TIMED');
 
-
-        return res.render('team', { team, pastFixtures, nextFixtures });
+        return res.render('team', { team, pastFixtures, notFinished });
       });
     });
   });

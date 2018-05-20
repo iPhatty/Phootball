@@ -9,16 +9,15 @@ exports.get = (req, res, next) => {
       if (err1) {
         next(err1);
       }
-      // Second API call for next 7 days fixtures
-      premierInfo(`http://api.football-data.org/v1/teams/${id}/fixtures?timeFrame=n7`, (err2, nextFixtures) => {
-        if (err2) {
-          next(err2);
-        }
+      return res.render('team', { team, pastFixtures });
+      // // Second API call for next 7 days fixtures
+      // premierInfo(`http://api.football-data.org/v1/teams/${id}/fixtures?timeFrame=n7`, (err2, nextFixtures) => {
+      //   if (err2) {
+      //     next(err2);
+      //   }
 
-        const notFinished = nextFixtures.fixtures.filter(object => object.status === 'TIMED');
-
-        return res.render('team', { team, pastFixtures, notFinished });
-      });
+      //   const notFinished = nextFixtures.fixtures.filter(object => object.status === 'TIMED');
+      // });
     });
   });
 };
